@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Boyfriend's Day 💖</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<canvas id="bg"></canvas>
+
+<!-- 1 envelope -->
+<div class="sc on" id="s0"><div class="in">
+  <p class="s hint" style="font-size:1.7rem;margin:0">something for you, my love…</p>
+  <div class="env" id="env"><div class="flap"></div><div class="seal">💖</div><div class="note s">for you 💌</div></div>
+  <div id="hb"><h1>Happy Boyfriend's Day</h1><p class="s" style="font-size:1.7rem;color:var(--soft);margin:0">to the best person in my world 🥹</p><button data-go="1">Read my letter 💌</button></div>
+  <p class="hint" id="tap">tap the envelope</p>
+</div></div>
+
+<!-- 2 letter -->
+<div class="sc" id="s1"><div class="in" style="max-width:640px">
+  <div class="paper" id="letter"></div>
+  <button data-go="2" id="b1">There's more… 💝</button>
+</div></div>
+
+<!-- 3 certificate -->
+<div class="sc" id="s2"><div class="in">
+  <div class="cert" id="cert">
+    <small>Official &amp; very serious</small>
+    <h2 class="s">Best Boyfriend Award</h2>
+    <div class="rosette">🏅</div>
+    <p style="margin:6px 0">This certificate is proudly presented to</p>
+    <div class="cname s" id="cn"></div>
+    <p style="line-height:1.7;font-size:.98rem;margin:12px 0">for outstanding hugs, world-class cuddles, unlimited patience, being my best friend, and making me feel loved every single day.</p>
+    <p class="s" style="font-size:1.5rem;margin:8px 0 0">with a kiss 💋</p>
+    <div id="kiss">💋</div><br><small id="kh">tap for your kiss</small>
+    <p class="s" style="font-size:1.6rem;margin:16px 0 0">signed, <span id="yn"></span> ❤️</p>
+  </div>
+  <button data-go="3">See our memories 📸</button>
+</div></div>
+
+<!-- 4 photos -->
+<div class="sc" id="s3"><div class="in">
+  <h2>Our memories</h2><p class="hint" style="margin-top:0">our favourite moments ✨</p>
+  <div class="ph" id="ph">
+    <!-- 📸 PHOTO SECTION: put your photos in the photos folder, then change each src="photos/N.jpg" to your photo file name, and edit the caption text below it -->
+    <div class="pf" style="--r:-4deg">
+      <img src="us4.png" alt="our photo 1" onerror="this.remove()">
+      <p class="s">our first memory 💕</p>
+    </div>
+    <div class="pf" style="--r:3deg">
+      <img src="us.png" alt="our photo 2" onerror="this.remove()">
+      <p class="s">you & me 💕</p>
+    </div>
+    <div class="pf" style="--r:2deg">
+      <img src="us5.png" alt="our photo 3" onerror="this.remove()">
+      <p class="s">mera mootichoor ka laddo 💕</p>
+    </div>
+    <div class="pf" style="--r:-3deg">
+      <img src="us6.png" alt="our photo 4" onerror="this.remove()">
+      <p class="s">Betuuuu 💕</p>
+    </div>
+    <div class="pf" style="--r:-2deg">
+      <img src="us2.png" alt="our photo 5" onerror="this.remove()">
+      <p class="s">you 💕</p>
+    </div>
+    <div class="pf" style="--r:4deg">
+      <img src="us1.png" alt="our photo 6" onerror="this.remove()">
+      <p class="s">I love you 💕</p>
+    </div>
+  </div>
+  <button data-go="4">A song for you 🎶</button>
+</div></div>
+
+<!-- 5 song -->
+<div class="sc" id="s4"><div class="in">
+  <h2>A song for you</h2>
+  <div class="vinyl" id="vn">💗</div>
+  <div class="eq" id="eq"></div>
+  <p class="s" id="st" style="font-size:1.6rem;color:var(--pink);margin:10px 0 0">tap play, my love</p>
+  <button id="play">▶ Play our song</button><br>
+  <button class="ghost" id="up">I Love you baby🥺✨💗</button>
+  <div class="dedic" style="margin-top:22px" id="dd"></div>
+  <button data-go="5">Why I love you 💞</button>
+</div></div>
+
+<!-- 6 reasons -->
+<div class="sc" id="s5"><div class="in">
+  <h2>10 things I love about you</h2>
+  <div id="rl"></div>
+  <div id="fin" class="s" style="font-size:1.5rem"></div>
+</div></div>
+
+<audio id="au" loop></audio>
+<script src="script.js"></script></body></html>
